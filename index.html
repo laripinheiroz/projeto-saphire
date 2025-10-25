@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saphire</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
@@ -10,120 +11,168 @@
 </head>
 
 <body>
-  <div class="site">
-    <header class="site-header">
-      <div class="brand">
+  <div class="pagina">
+    <header class="cabecalho container">
+      <a class="marca" href="#home">
         <img src="./img/logo-colorida.svg" alt="Saphire" class="logo">
-      </div>
-
-<nav class="nav">
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#contato">Contato</a></li>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#blog">Blog</a></li>
+      </a>
+      <nav class="nav-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
-     </nav>
-</header>
+      </nav>
+    </header>
 
-    <main class="main-wrap">
-      <section class="hero">
-        <div class="hero-left">
-          <h1 class="title">A casa que você procura em um único lugar.</h1>
-          <p class="lead">
-           <strong>Há mais de 15 anos transformando sonhos em realidade! Encontre o lar dos seus sonhos com quem entende suas necessidades. </stong>
+    <main class="conteudo container">
+      <section class="topo" id="home">
+        <div class="topo-esquerda">
+          <h1 class="titulo-principal">A casa que você procura em um único lugar.</h1>
+          <p class="descricao">
+            <strong>Há mais de 15 anos transformando sonhos em realidade! Encontre o lar dos seus sonhos com quem entende suas necessidades.</strong>
           </p>
-
-          <div class="search-wrap">
-            <div class="search-back" aria-hidden="true"></div>
-            <a class="search-front" href="#buscar">Pesquisar</a> <!--arrumar botao-->
+          <div class="busca-bloco">
+            <div class="busca-fundo" aria-hidden="true"></div>
+            <a class="botao-busca" href="#buscar">Pesquisar</a>
           </div>
         </div>
 
-        <div class="hero-right">
-          <div class="hero-image">
-            <img src="./img/house1.jpg" alt="Casa do inicio">
-          </div>
+        <div class="topo-direita">
+          <figure class="card-imagem">
+            <img src="./img/house1.jpg" alt="Casa em destaque">
+          </figure>
         </div>
       </section>
-        <!--arrumar centralizacao e espaçamento de todo conteudo de cima-->
-        <!--deixar o efeito hover do nav mais bonito e fazer cada um levar para os lugares certos da pagina-->
+      <!--Arrume esse botao pesquisar que esta com um espaço pequeno branco na lateral esquerda (nao sei pq ficou assim)-->
+      <!--ajuste a responsividade em celular, para com que fique exatamente como o prototipo do figma que é mobile first-->
+      <!--ajuste para que esta primeira section apareça toda quando abre o site e a imagem nao corte (e precise rolar para baixo)-->
+      <!--o h1 esta cortando em 3 linhas. faça com que corte em apenas duas-->
+      <!--o <p> esta muito escuro, diminui só mais um pouquinho negrito, tire o strong pra ver se fica melhor-->
 
-      <section class="feature">
-        <div class="feature-image">
-          <img src="./img/house2.jpg" alt="Segunda casa da pagina">
-        </div>
-        <div class="feature-content">
+      <section class="secao-destaque">
+        <figure class="img-secundaria">
+          <img src="./img/house2.jpg" alt="Casa secundária">
+        </figure>
+        <div class="conteudo-secundario">
           <h3>Reivindique a sua melhor vida conosco!</h3>
           <p>Orientação completa para reformas, contratos e mudança.</p>
-
-          <a class="btn-learn" href="#lermais">
+          <a class="botao-saber" href="#lermais">
             Ler mais
-            <svg class="arrow" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg class="seta" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M1 6H12" stroke="#0E333D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M8 10L12 6L8 2" stroke="#0E333D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </a> 
+          </a>
         </div>
       </section>
-      <!--arumar titulo (h3) dessa sessao-->
-<!--arrumar botao, colocar fundo azul e arredondar mais-->
-<!--diminuir a altura da imagem e ajustar espaçamento de todo conteudo acima-->
+
+      <!--ajuste a altura da imagem para que fique menor, como esta no prototipo, um estilo mais "quadrado" não estou falando sobre as bordas aqui-->
+      <!--Formate o o h3 para que fique igual o titulo da section 1, com aquele gradiente e tamanho de texto-->
+      <!--padronize todos os <p> da pagina para que fiquem em estilio bold medio ou thin-->
+        <!--reverta o efeito hover do botao ler mais para que fique com a cor e quando passa o mouse em cima ele tira a cor, deixe as bordas mais arredondadas tambem-->
+        <!--ajuste a responsividade para que fique exatamente igual ao prototipo em celulares-->
 
       <section id="blog" class="blog">
         <h2>Artigos do Blog</h2>
-        <ul class="posts">
-          <li>
-            <img src="./img/image.jpg" alt="thumb">
+        <ul class="lista-posts">
+          <li class="post">
+            <img src="./img/image.jpg" alt="thumb artigo 1">
             <div>
               <h4>Como definir um orçamento para a reforma de casa.</h4>
-              <p>Definir um orçamento para a reforma de uma casa é um passo essencial para garantir que o projeto seja bem-sucedido e dentro das suas possibilidades financeiras. Antes de iniciar qualquer obra, é fundamental planejar cada detalhe.</p>
+              <p>Definir um orçamento para a reforma de uma casa é um passo essencial para garantir que o projeto seja bem-sucedido e dentro das suas possibilidades financeiras.</p>
             </div>
           </li>
-          <li>
-            <img src="./img/house3.jpg" alt="thumb">
+          <li class="post">
+            <img src="./img/house3.jpg" alt="thumb artigo 2">
             <div>
               <h4>7 maneiras de fazer seu home office funcionar: Dicas de iluminação, ergonomia e organização.</h4>
-              <p>Guia completo da criação de um home office perfeito para garantir produtividade e conforto no ambiente de trabalho em casa. Com o aumento do trabalho remoto.</p>
+              <p>Guia completo da criação de um home office perfeito para garantir produtividade e conforto.</p>
             </div>
           </li>
         </ul>
       </section>
-<!--ajustar textos, imagens, tirar esses "blocos" dos dois artigos e aumentar imagens.-->
+
+      <!--tire os dois arigos desses "blocos" com fundo branco, deixe fiel ao prototipo-->
+      <!--ajuste o h2 para que fique igaul ao restante dos titulos do site, com o mesmo gradiente, estilo e tamanho de texto-->
+      <!--faça a mesma padronização com os <p> da pagina (falei acima)-->
+      <!--coloque hover nos artigos-->
+      <!--ajuste responsividade par que fique exatamente igual ao prototipo em celular-->
+
 
       <section class="cta">
-        <div class="cta-inner">
+        <div class="cta-interno">
           <h3>Comece agora com Saphire!</h3>
-          <p>Assine e encontre uma cotação de preço atraente exclusiva pra você , pois a casa dos seus sonhos está aqui com a gente.</p>
-          <a class="btn-cta" href="#comece">INSCREVA-SE</a>
+          <p>Assine e encontre uma cotação de preço atraente exclusiva pra você.</p>
+          <a class="botao-cta" href="#inscrever">INSCREVA-SE</a>
         </div>
       </section>
     </main>
-<!--ajustar gradinte para um tom mais escuro e corrigir formato e centralização dos textos-->
 
-    <footer class="site-footer">
-      <div class="footer-top">
-        <img src="./img/logo-negativa.svg" alt="Saphire" class="logo-white">
-        <p>Nossa visão é fazer de todas as pessoas o melhor lugar para viver.</p>
-      </div>
+    <!--coloque o gradiente no fundo desse bloco(igual o do prototipo)-->
+    <!--ajuste o <p> para que fique sem o negrito e mesmo formato do h3-->
+      <!--ajuste responsividade para que fique exatamente igual o prototipo em celulares-->
 
-      <!--pesquisar como fazer essa parte pq vc nao sabe-->
-      <div class="navegacao-footer">
-        <nav class="nav-footer">
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#contato">Contato</a></li>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#blog">Blog</a></li>
-        </ul>
-     </nav>
+    <footer class="rodape">
+      <div class="rodape-super container">
+        <div class="rodape-esquerda">
+          <img src="./img/logo-negativa.svg" alt="Saphire" class="logo-branco">
+          <p class="visao">Nossa visão é fazer de todas as pessoas o melhor lugar para viver.</p>
+        </div>
+        <nav class="rodape-centro" aria-label="Links do rodapé">
+          <div class="coluna">
+            <h5>Sobre Nós</h5>
+            <ul>
+              <li><a href="#quem">Quem Somos</a></li>
+              <li><a href="#carac">Características</a></li>
+              <li><a href="#noticias">Notícias & Blog</a></li>
+            </ul>
+          </div>
+          <div class="coluna">
+            <h5>Empresa</h5>
+            <ul>
+              <li><a href="#como">Como Trabalhamos</a></li>
+              <li><a href="#capital">Capital</a></li>
+              <li><a href="#seg">Segurança</a></li>
+            </ul>
+          </div>
+          <div class="coluna">
+            <h5>Apoio</h5>
+            <ul>
+              <li><a href="#faq">FAQ's</a></li>
+              <li><a href="#ajuda">Ajuda</a></li>
+              <li><a href="#contato">Contate-nos</a></li>
+            </ul>
+          </div>
+          <div class="coluna">
+            <h5>Jurídico</h5>
+            <ul>
+              <li><a href="#politica">Política</a></li>
+              <li><a href="#docs">Documentos</a></li>
+              <li><a href="#ajuda2">Ajuda</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="rodape-direita">
+          <p>@Saphire 2025. Todos os direitos reservados.</p>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <p>© Saphire 2025. Todos os direitos reservados.</p>
+      <div class="rodape-baixo">
+        <div class="container">
+          <hr class="linha-rodape">
+        </div>
       </div>
     </footer>
   </div>
+  <!--aqui temos muitos erros, principalmente de responsividade, faça com que fique exatamente igual ao prototipo-->
+  <!--ajuste o "nossa visão.." para que fique embaixo da logo (que esta na latel esquerda do footer)-->
+  <!--alinhe as h5 e li, parecem estar tortos-->
+  <!--as li estão em negrito, tire para qe fiquem igual ao prototipo-->
+  <!--a parte "@saphire 2025..." esta no lado direto, é para ficar embaixo de tudo, daquela linha que tem-->
+  <!--ajuste responsividade para que fique exatamente igual ao prototiipo em celulares-->
+  <!--tire o gradiente do fundo do footer deixando aquele tom de azul solido-->
+  <!--a parte da logo tem que ficar no estremo canto esquedo e as h5 com navs estremo canto direto, a parte de "direitos reservados etc" em baixo da "linha" e centralizado(em pc e celular)-->
 </body>
 </html>
