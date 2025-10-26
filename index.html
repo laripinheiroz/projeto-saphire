@@ -2,17 +2,17 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saphire</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <div class="pagina">
-
-    <header class="cabecalho container" id="topo">
+  <header id="topo" class="cabecalho">
+    <div class="container-header">
       <a class="marca" href="#home" aria-label="Saphire - Início">
         <img src="./img/logo-colorida.svg" alt="Saphire" class="logo">
       </a>
@@ -26,127 +26,123 @@
           <li><a href="#blog">Blog</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
+  <main class="conteudo container">
+    <section class="topo" id="home">
+      <div class="topo-esquerda">
+        <h1 class="titulo-principal">A casa que você procura em um único lugar.</h1>
+        <p class="descricao">Há mais de 15 anos transformando sonhos em realidade! Encontre o lar dos seus sonhos com quem entende suas necessidades.</p>
 
-    <main class="conteudo container">
-
-      <section class="topo" id="home">
-        <div class="topo-esquerda">
-          <h1 class="titulo-principal">A casa que você procura em um único lugar.</h1>
-          <p class="descricao">Há mais de 15 anos transformando sonhos em realidade! Encontre o lar dos seus sonhos com quem entende suas necessidades.</p>
-
-          <div class="busca-bloco" role="group" aria-label="Pesquisar imóveis">
-            <div class="busca-fundo" aria-hidden="true"></div>
-            <a class="botao-busca" href="#buscar">Pesquisar</a>
-          </div>
+        <div class="busca-bloco" role="group" aria-label="Pesquisar imóveis">
+          <div class="busca-fundo" aria-hidden="true"></div>
+          <a class="botao-busca" href="#buscar">Pesquisar</a>
         </div>
+      </div>
 
-        <div class="topo-direita">
-          <div class="card-imagem-wrap">
-            <figure class="card-imagem">
-              <img src="./img/house1.jpg" alt="Casa em destaque">
-            </figure>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="secao-destaque" id="sobre">
-        <figure class="img-secundaria">
-          <img src="./img/house2.jpg" alt="Casa secundária">
+      <div class="topo-direita">
+        <figure class="card-imagem">
+          <img src="./img/house1.jpg" alt="Casa em destaque">
         </figure>
+      </div>
+    </section>
 
-        <div class="conteudo-secundario">
-          <h3 class="titulo-secundario">Reivindique a sua melhor vida conosco!</h3>
-          <p class="texto-padrao">Orientação completa para reformas, contratos e mudança.</p>
-          <a class="botao-saber" href="#lermais" aria-label="Ler mais sobre nossos serviços">
-            Ler mais
-            <svg class="seta" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M1 6H12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M8 10L12 6L8 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </div>
-      </section>
+    <section class="secao-destaque" id="sobre">
+      <figure class="img-secundaria">
+        <img src="./img/house2.jpg" alt="Casa secundária">
+      </figure>
 
-      <section id="blog" class="blog">
-        <h2 class="titulo-secao">Artigos do Blog</h2>
-        <ul class="lista-posts">
-          <li class="post">
-            <img src="./img/image.jpg" alt="thumb artigo 1">
-            <div class="post-texto">
-              <h4>Como definir um orçamento para a reforma de casa.</h4>
-              <p class="texto-padrao">Definir um orçamento para a reforma de uma casa é um passo essencial para garantir que o projeto seja bem-sucedido e dentro das suas possibilidades financeiras.</p>
-            </div>
-          </li>
-          <li class="post">
-            <img src="./img/house3.jpg" alt="thumb artigo 2">
-            <div class="post-texto">
-              <h4>7 maneiras de fazer seu home office funcionar.</h4>
-              <p class="texto-padrao">Guia prático para montar um home office realmente produtivo: ergonomia básica, iluminação eficiente, organização do espaço e rotinas simples que aumentam o foco mesmo em ambientes pequenos.</p>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <div class="conteudo-secundario">
+        <h2 class="titulo-secundario">Reivindique a sua melhor vida conosco!</h2>
+        <p class="texto-padrao">Orientação completa para reformas, contratos e mudança.</p>
+    <a class="botao-saber" href="#lermais" aria-label="Ler mais sobre nossos serviços">
+          Ler mais
+          <svg class="seta" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M1 6H12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 10L12 6L8 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
 
-      <section class="cta" id="contato">
-        <div class="cta-interno">
-          <h3 class="titulo-cta">Comece agora com Saphire!</h3>
-          <p class="texto-padrao">Assine e encontre uma cotação de preço atraente exclusiva pra você.</p>
-          <a class="botao-cta" href="#inscrever">INSCREVA-SE</a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="rodape">
-      <div class="rodape-super container">
-        <div class="rodape-esquerda">
-          <img src="./img/logo-negativa.svg" alt="Saphire" class="logo-branco">
-          <p class="visao">Nossa visão é fazer de todas as pessoas o melhor lugar para viver.</p>
-        </div>
-
-        <nav class="rodape-centro" aria-label="Links do rodapé">
-          <div class="coluna">
-            <h5>Sobre Nós</h5>
-            <ul>
-              <li><a href="#quem">Quem Somos</a></li>
-              <li><a href="#carac">Características</a></li>
-              <li><a href="#noticias">Notícias &amp; Blog</a></li>
-            </ul>
+    <section id="blog" class="blog">
+      <h2 class="titulo-secao">Artigos do Blog</h2>
+      <ul class="lista-posts">
+        <li class="post">
+          <img src="./img/image.jpg" alt="Fachada de uma casa iluminada durante o pôr do sol">
+          <div class="post-texto">
+            <h3>Como definir um orçamento para a reforma de casa.</h3>
+            <p class="texto-padrao">Definir um orçamento para a reforma de uma casa é um passo essencial para garantir que o projeto seja bem-sucedido e dentro das suas possibilidades financeiras.</p>
           </div>
-          <div class="coluna">
-            <h5>Empresa</h5>
-            <ul>
-              <li><a href="#como">Como Trabalhamos</a></li>
-              <li><a href="#capital">Capital</a></li>
-              <li><a href="#seg">Segurança</a></li>
-            </ul>
+        </li>
+        <li class="post">
+          <img src="./img/house3.jpg" alt="Ambiente de escritório em casa bem iluminado">
+          <div class="post-texto">
+            <h3>7 maneiras de fazer seu home office funcionar.</h3>
+            <p class="texto-padrao">Guia prático para montar um home office realmente produtivo: ergonomia básica, iluminação eficiente, organização do espaço e rotinas simples que aumentam o foco mesmo em ambientes pequenos.</p>
           </div>
-          <div class="coluna">
-            <h5>Apoio</h5>
-            <ul>
-              <li><a href="#faq">FAQ's</a></li>
-              <li><a href="#ajuda">Ajuda</a></li>
-              <li><a href="#contato">Contate-nos</a></li>
-            </ul>
-          </div>
-          <div class="coluna">
-            <h5>Jurídico</h5>
-            <ul>
-              <li><a href="#politica">Política</a></li>
-              <li><a href="#docs">Documentos</a></li>
-              <li><a href="#ajuda2">Ajuda</a></li>
-            </ul>
-          </div>
-        </nav>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cta" id="contato">
+      <div class="cta-interno">
+        <h2 class="titulo-cta">Comece agora com Saphire!</h2>
+        <p class="texto-padrao">Assine e encontre uma cotação de preço atraente exclusiva pra você.</p>
+        <a class="botao-cta" href="#inscrever">INSCREVA-SE</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-super container">
+      <div class="rodape-esquerda">
+        <img src="./img/logo-negativa.svg" alt="Saphire" class="logo-branco">
+        <p class="visao">Nossa visão é fazer de todas as pessoas o melhor lugar para viver.</p>
       </div>
 
-      <div class="rodape-baixo container">
-        <hr class="linha-rodape">
-        <p class="copyright">@Saphire 2025. Todos os direitos reservados.</p>
-      </div>
-    </footer>
-  </div>
+      <nav class="rodape-centro" aria-label="Links do rodapé">
+        <div class="coluna">
+          <h5>Sobre Nós</h5>
+          <ul>
+            <li><a href="#quem">Quem Somos</a></li>
+            <li><a href="#carac">Características</a></li>
+            <li><a href="#noticias">Notícias &amp; Blog</a></li>
+          </ul>
+        </div>
+        <div class="coluna">
+          <h5>Empresa</h5>
+          <ul>
+            <li><a href="#como">Como Trabalhamos</a></li>
+            <li><a href="#capital">Capital</a></li>
+            <li><a href="#seg">Segurança</a></li>
+          </ul>
+        </div>
+        <div class="coluna">
+          <h5>Apoio</h5>
+          <ul>
+            <li><a href="#faq">FAQ's</a></li>
+            <li><a href="#ajuda">Ajuda</a></li>
+            <li><a href="#contato">Contate-nos</a></li>
+          </ul>
+        </div>
+        <div class="coluna">
+          <h5>Jurídico</h5>
+          <ul>
+            <li><a href="#politica">Política</a></li>
+            <li><a href="#docs">Documentos</a></li>
+            <li><a href="#ajuda2">Ajuda</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="rodape-baixo container">
+      <hr class="linha-rodape">
+      <p class="copyright">@Saphire 2025. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
