@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+  
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,52 +11,60 @@
 
 <body>
   <div class="pagina">
-    <header class="cabecalho container">
-      <a class="marca" href="#home">
+
+    <header class="cabecalho container" id="topo">
+      <a class="marca" href="#home" aria-label="Saphire - Início">
         <img src="./img/logo-colorida.svg" alt="Saphire" class="logo">
       </a>
+
       <nav class="nav-principal" aria-label="Menu principal">
         <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#sobre">Sobre</a></li>
-  <li><a href="#projetos">Projetos</a></li>
-  <li><a href="#blog">Blog</a></li>
-  <li><a href="#contato">Contato</a></li>
-      </ul>
-   </nav>
-</header>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
 
     <main class="conteudo container">
+
       <section class="topo" id="home">
         <div class="topo-esquerda">
           <h1 class="titulo-principal">A casa que você procura em um único lugar.</h1>
           <p class="descricao">Há mais de 15 anos transformando sonhos em realidade! Encontre o lar dos seus sonhos com quem entende suas necessidades.</p>
 
-          <div class="busca-bloco">
+          <div class="busca-bloco" role="group" aria-label="Pesquisar imóveis">
             <div class="busca-fundo" aria-hidden="true"></div>
             <a class="botao-busca" href="#buscar">Pesquisar</a>
           </div>
         </div>
 
         <div class="topo-direita">
-          <figure class="card-imagem">
-            <img src="./img/house1.jpg" alt="Casa em destaque">
-          </figure>
+          <div class="card-imagem-wrap">
+            <figure class="card-imagem">
+              <img src="./img/house1.jpg" alt="Casa em destaque">
+            </figure>
+          </div>
         </div>
       </section>
 
-      <section class="secao-destaque">
+
+      <section class="secao-destaque" id="sobre">
         <figure class="img-secundaria">
           <img src="./img/house2.jpg" alt="Casa secundária">
         </figure>
+
         <div class="conteudo-secundario">
           <h3 class="titulo-secundario">Reivindique a sua melhor vida conosco!</h3>
           <p class="texto-padrao">Orientação completa para reformas, contratos e mudança.</p>
-          <a class="botao-saber" href="#lermais">
+          <a class="botao-saber" href="#lermais" aria-label="Ler mais sobre nossos serviços">
             Ler mais
             <svg class="seta" width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M1 6H12" stroke="#0E333D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M8 10L12 6L8 2" stroke="#0E333D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 6H12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 10L12 6L8 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>
         </div>
@@ -66,23 +74,23 @@
         <h2 class="titulo-secao">Artigos do Blog</h2>
         <ul class="lista-posts">
           <li class="post">
-            <img src="./img/blog1.jpg" alt="thumb artigo 1">
+            <img src="./img/image.jpg" alt="thumb artigo 1">
             <div class="post-texto">
               <h4>Como definir um orçamento para a reforma de casa.</h4>
               <p class="texto-padrao">Definir um orçamento para a reforma de uma casa é um passo essencial para garantir que o projeto seja bem-sucedido e dentro das suas possibilidades financeiras.</p>
             </div>
           </li>
           <li class="post">
-            <img src="./img/blog2.jpg" alt="thumb artigo 2">
+            <img src="./img/house3.jpg" alt="thumb artigo 2">
             <div class="post-texto">
-              <h4>7 maneiras de fazer seu home office funcionar: Dicas de iluminação, ergonomia e organização.</h4>
-              <p class="texto-padrao">Guia completo da criação de um home office perfeito para garantir produtividade e conforto.</p>
+              <h4>7 maneiras de fazer seu home office funcionar.</h4>
+              <p class="texto-padrao">Guia completo para criar um home office produtivo e confortável.</p>
             </div>
           </li>
         </ul>
       </section>
 
-      <section class="cta">
+      <section class="cta" id="contato">
         <div class="cta-interno">
           <h3 class="titulo-cta">Comece agora com Saphire!</h3>
           <p class="texto-padrao">Assine e encontre uma cotação de preço atraente exclusiva pra você.</p>
@@ -104,7 +112,7 @@
             <ul>
               <li><a href="#quem">Quem Somos</a></li>
               <li><a href="#carac">Características</a></li>
-              <li><a href="#noticias">Notícias & Blog</a></li>
+              <li><a href="#noticias">Notícias &amp; Blog</a></li>
             </ul>
           </div>
           <div class="coluna">
